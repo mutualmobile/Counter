@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D7A64E5D-9E70-400A-A8DB-CAC90C815DAB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Counter</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F79CF9BC-5F25-46DD-A1B7-3D24D3DBE095</key>
+		<string>ssh://github.com/mutualmobile/Counter.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Counter.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F79CF9BC-5F25-46DD-A1B7-3D24D3DBE095</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/mutualmobile/Counter.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F79CF9BC-5F25-46DD-A1B7-3D24D3DBE095</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F79CF9BC-5F25-46DD-A1B7-3D24D3DBE095</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Counter</string>
+		</dict>
+	</array>
+</dict>
+</plist>

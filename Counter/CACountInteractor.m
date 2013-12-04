@@ -47,16 +47,7 @@
 
 - (void)sendCount
 {
-    if ([self canSendCount])
-    {
-        [self.output updateCount:self.count];
-    }
-}
-
-
-- (BOOL)canSendCount
-{
-    return ((self.output != nil) && ([self.output respondsToSelector:@selector(updateCount:)]));
+    [self.output updateCount:self.count];
 }
 
 @end
