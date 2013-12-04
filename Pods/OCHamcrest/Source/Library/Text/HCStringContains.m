@@ -12,7 +12,7 @@
 
 @implementation HCStringContains
 
-+ (id)stringContains:(NSString *)aString
++ (instancetype)stringContains:(NSString *)aString
 {
     return [[self alloc] initWithSubstring:aString];
 }
@@ -33,9 +33,7 @@
 @end
 
 
-#pragma mark -
-
-id<HCMatcher> HC_containsString(NSString *aString)
+id <HCMatcher> HC_containsString(NSString *aString)
 {
     return [HCStringContains stringContains:aString];
 }

@@ -13,29 +13,29 @@
     Protocol *theProtocol;
 }
 
-+ (id)conformsTo:(Protocol *)protocol;
-- (id)initWithProtocol:(Protocol *)protocol;
++ (instancetype)conformsTo:(Protocol *)protocol;
+- (instancetype)initWithProtocol:(Protocol *)protocol;
 
 @end
 
 
-OBJC_EXPORT id<HCMatcher> HC_conformsTo(Protocol *aProtocol);
+OBJC_EXPORT id HC_conformsTo(Protocol *aProtocol);
 
 /**
-    conformsTo(aProtocol) -
-    Matches if object conforms to a given protocol.
-
-    @param aProtocol  The protocol to compare against as the expected protocol.
-
-    This matcher checks whether the evaluated object conforms to @a aProtocol.
-
-    Example:
-    @li @ref conformsTo(\@protocol(NSObject))
-
-    (In the event of a name clash, don't \#define @c HC_SHORTHAND and use the synonym
-    @c HC_conformsTo instead.)
-
-    @ingroup object_matchers
+ conformsTo(aProtocol) -
+ Matches if object conforms to a given protocol.
+ 
+ @param aProtocol  The protocol to compare against as the expected protocol.
+ 
+ This matcher checks whether the evaluated object conforms to @a aProtocol.
+ 
+ Example:
+ @li @ref conformsTo(\@protocol(NSObject))
+ 
+ (In the event of a name clash, don't \#define @c HC_SHORTHAND and use the synonym
+ @c HC_conformsTo instead.)
+ 
+ @ingroup object_matchers
  */
 #ifdef HC_SHORTHAND
     #define conformsTo HC_conformsTo

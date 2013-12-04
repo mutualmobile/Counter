@@ -1,6 +1,6 @@
 //
 //  OCMockito - MKTOngoingStubbing.h
-//  Copyright 2012 Jonathan M. Reid. See LICENSE.txt
+//  Copyright 2013 Jonathan M. Reid. See LICENSE.txt
 //
 //  Created by: Jon Reid, http://qualitycoding.org/
 //  Source: https://github.com/jonreid/OCMockito
@@ -13,11 +13,11 @@
 
 
 /**
-    Methods to invoke on @c given(methodCall) to return stubbed values.
+ Methods to invoke on @c given(methodCall) to return stubbed values.
  */
 @interface MKTOngoingStubbing : NSObject <MKTPrimitiveArgumentMatching>
 
-- (id)initWithInvocationContainer:(MKTInvocationContainer *)invocationContainer;
+- (instancetype)initWithInvocationContainer:(MKTInvocationContainer *)invocationContainer;
 
 /// Stubs given object as return value.
 - (MKTOngoingStubbing *)willReturn:(id)object;

@@ -23,13 +23,14 @@
 
 - (BOOL)isMatched:(id)item;
 - (BOOL)isNotSurplus:(id)item;
-- (void)describeMismatchOfMatcher:(id<HCMatcher>)matcher item:(id)item;
+- (void)describeMismatchOfMatcher:(id <HCMatcher>)matcher item:(id)item;
 
 @end
 
 @implementation HCMatchSequence
 
-- (id)initWithMatchers:(NSArray *)itemMatchers mismatchDescription:(id<HCDescription, NSObject>)description
+- (instancetype)initWithMatchers:(NSArray *)itemMatchers
+             mismatchDescription:(id<HCDescription, NSObject>)description
 {
     self = [super init];
     if (self)
@@ -58,7 +59,7 @@
 
 - (BOOL)isMatched:(id)item
 {
-    id<HCMatcher> matcher = matchers[nextMatchIndex];
+    id <HCMatcher> matcher = matchers[nextMatchIndex];
     if (![matcher matches:item])
     {
         [self describeMismatchOfMatcher:matcher item:item];
@@ -78,7 +79,7 @@
     return YES;
 }
 
-- (void)describeMismatchOfMatcher:(id<HCMatcher>)matcher item:(id)item
+- (void)describeMismatchOfMatcher:(id <HCMatcher>)matcher item:(id)item
 {
     [mismatchDescription appendText:[NSString stringWithFormat:@"item %zi: ", nextMatchIndex]];
     [matcher describeMismatchOf:item to:mismatchDescription];
@@ -87,16 +88,14 @@
 @end
 
 
-#pragma mark -
-
 @implementation HCIsCollectionContainingInOrder
 
-+ (id)isCollectionContainingInOrder:(NSArray *)itemMatchers
++ (instancetype)isCollectionContainingInOrder:(NSArray *)itemMatchers
 {
     return [[self alloc] initWithMatchers:itemMatchers];
 }
 
-- (id)initWithMatchers:(NSArray *)itemMatchers
+- (instancetype)initWithMatchers:(NSArray *)itemMatchers
 {
     self = [super init];
     if (self)
@@ -141,9 +140,7 @@
 @end
 
 
-#pragma mark -
-
-id<HCMatcher> HC_contains(id itemMatch, ...)
+id HC_contains(id itemMatch, ...)
 {
     NSMutableArray *matchers = [NSMutableArray arrayWithObject:HCWrapInMatcher(itemMatch)];
     

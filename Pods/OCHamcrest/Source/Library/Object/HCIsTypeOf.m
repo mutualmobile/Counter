@@ -15,7 +15,7 @@
 
 @implementation HCIsTypeOf
 
-+ (id)isTypeOf:(Class)type
++ (instancetype)isTypeOf:(Class)type
 {
     return [[self alloc] initWithType:type];
 }
@@ -33,9 +33,7 @@
 @end
 
 
-#pragma mark -
-
-id<HCMatcher> HC_isA(Class aClass)
+id HC_isA(Class aClass)
 {
     return [HCIsTypeOf isTypeOf:aClass];
 }

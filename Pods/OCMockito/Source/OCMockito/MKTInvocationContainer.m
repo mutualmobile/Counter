@@ -1,6 +1,6 @@
 //
 //  OCMockito - MKTInvocationContainer.m
-//  Copyright 2012 Jonathan M. Reid. See LICENSE.txt
+//  Copyright 2013 Jonathan M. Reid. See LICENSE.txt
 //
 //  Created by: Jon Reid, http://qualitycoding.org/
 //  Source: https://github.com/jonreid/OCMockito
@@ -8,28 +8,21 @@
 
 #import "MKTInvocationContainer.h"
 
-#import "MKTMockingProgress.h"
 #import "MKTStubbedInvocationMatcher.h"
-
-
-@interface MKTInvocationContainer ()
-@property (nonatomic, strong) MKTStubbedInvocationMatcher *invocationMatcherForStubbing;
-@end
 
 
 @implementation MKTInvocationContainer
 {
-    MKTMockingProgress *_mockingProgress;
+    MKTStubbedInvocationMatcher *_invocationForStubbing;
     NSMutableArray *_stubbed;
 }
 
-- (id)initWithMockingProgress:(MKTMockingProgress *)mockingProgress
+- (instancetype)init
 {
     self = [super init];
     if (self)
     {
         _registeredInvocations = [[NSMutableArray alloc] init];
-        _mockingProgress = mockingProgress;
         _stubbed = [[NSMutableArray alloc] init];
     }
     return self;
@@ -41,30 +34,29 @@
     [invocation retainArguments];
     [_registeredInvocations addObject:invocation];
     
-    MKTStubbedInvocationMatcher *stubbedInvocationMatcher = [[MKTStubbedInvocationMatcher alloc] init];
-    [stubbedInvocationMatcher setExpectedInvocation:invocation];
-    [self setInvocationMatcherForStubbing:stubbedInvocationMatcher];
+    MKTStubbedInvocationMatcher *s = [[MKTStubbedInvocationMatcher alloc] init];
+    [s setExpectedInvocation:invocation];
+    _invocationForStubbing = s;
 }
 
 - (void)setMatcher:(id <HCMatcher>)matcher atIndex:(NSUInteger)argumentIndex
 {
-    [_invocationMatcherForStubbing setMatcher:matcher atIndex:argumentIndex];
+    [_invocationForStubbing setMatcher:matcher atIndex:argumentIndex];
 }
 
 - (void)addAnswer:(id)answer
 {
     [_registeredInvocations removeLastObject];
-    
-    [_invocationMatcherForStubbing setAnswer:answer];
-    [_stubbed insertObject:_invocationMatcherForStubbing atIndex:0];
+
+    _invocationForStubbing.answer = answer;
+    [_stubbed insertObject:_invocationForStubbing atIndex:0];
 }
 
-- (id)findAnswerFor:(NSInvocation *)invocation
+- (MKTStubbedInvocationMatcher *)findAnswerFor:(NSInvocation *)invocation
 {
-    for (MKTStubbedInvocationMatcher *stubbedInvocationMatcher in _stubbed)
-        if ([stubbedInvocationMatcher matches:invocation])
-            return [stubbedInvocationMatcher answer];
-    
+    for (MKTStubbedInvocationMatcher *s in _stubbed)
+        if ([s matches:invocation])
+            return s;
     return nil;
 }
 

@@ -17,12 +17,12 @@
 
 @implementation HCIsCollectionContaining
 
-+ (id)isCollectionContaining:(id<HCMatcher>)anElementMatcher
++ (instancetype)isCollectionContaining:(id <HCMatcher>)anElementMatcher
 {
     return [[self alloc] initWithMatcher:anElementMatcher];
 }
 
-- (id)initWithMatcher:(id<HCMatcher>)anElementMatcher
+- (instancetype)initWithMatcher:(id <HCMatcher>)anElementMatcher
 {
     self = [super init];
     if (self)
@@ -50,15 +50,13 @@
 @end
 
 
-#pragma mark -
-
-id<HCMatcher> HC_hasItem(id itemMatch)
+id HC_hasItem(id itemMatch)
 {
     HCRequireNonNilObject(itemMatch);
     return [HCIsCollectionContaining isCollectionContaining:HCWrapInMatcher(itemMatch)];
 }
 
-id<HCMatcher> HC_hasItems(id itemMatch, ...)
+id HC_hasItems(id itemMatch, ...)
 {
     NSMutableArray *matchers = [NSMutableArray arrayWithObject:HC_hasItem(itemMatch)];
     

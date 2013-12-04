@@ -24,8 +24,8 @@
 
 @implementation HCMatchingInAnyOrder
 
-- (id)initWithMatchers:(NSArray *)itemMatchers
-   mismatchDescription:(id<HCDescription, NSObject>)description
+- (instancetype)initWithMatchers:(NSArray *)itemMatchers
+             mismatchDescription:(id<HCDescription, NSObject>)description
 {
     self = [super init];
     if (self)
@@ -39,7 +39,7 @@
 - (BOOL)matches:(id)item
 {
     NSUInteger index = 0;
-    for (id<HCMatcher> matcher in matchers)
+    for (id <HCMatcher> matcher in matchers)
     {
         if ([matcher matches:item])
         {
@@ -67,16 +67,14 @@
 @end
 
 
-#pragma mark -
-
 @implementation HCIsCollectionContainingInAnyOrder
 
-+ (id)isCollectionContainingInAnyOrder:(NSArray *)itemMatchers
++ (instancetype)isCollectionContainingInAnyOrder:(NSArray *)itemMatchers
 {
     return [[self alloc] initWithMatchers:itemMatchers];
 }
 
-- (id)initWithMatchers:(NSArray *)itemMatchers
+- (instancetype)initWithMatchers:(NSArray *)itemMatchers
 {
     self = [super init];
     if (self)
@@ -122,9 +120,7 @@
 @end
 
 
-#pragma mark -
-
-id<HCMatcher> HC_containsInAnyOrder(id itemMatch, ...)
+id HC_containsInAnyOrder(id itemMatch, ...)
 {
     NSMutableArray *matchers = [NSMutableArray arrayWithObject:HCWrapInMatcher(itemMatch)];
     

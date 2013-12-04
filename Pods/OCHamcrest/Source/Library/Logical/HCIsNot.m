@@ -15,12 +15,12 @@
 
 @implementation HCIsNot
 
-+ (id)isNot:(id<HCMatcher>)aMatcher
++ (instancetype)isNot:(id <HCMatcher>)aMatcher
 {
     return [[self alloc] initNot:aMatcher];
 }
 
-- (id)initNot:(id<HCMatcher>)aMatcher
+- (instancetype)initNot:(id <HCMatcher>)aMatcher
 {
     self = [super init];
     if (self)
@@ -38,12 +38,14 @@
     [[description appendText:@"not "] appendDescriptionOf:matcher];
 }
 
+- (void)describeMismatchOf:(id)item to:(id<HCDescription>)mismatchDescription
+{
+    [matcher describeMismatchOf:item to:mismatchDescription];
+}
 @end
 
 
-#pragma mark -
-
-id<HCMatcher> HC_isNot(id aMatcher)
+id HC_isNot(id aMatcher)
 {
     return [HCIsNot isNot:HCWrapInMatcher(aMatcher)];
 }

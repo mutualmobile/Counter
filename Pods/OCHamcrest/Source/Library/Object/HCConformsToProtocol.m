@@ -13,12 +13,12 @@
 
 @implementation HCConformsToProtocol
 
-+ (id)conformsTo:(Protocol *)protocol
++ (instancetype)conformsTo:(Protocol *)protocol
 {
     return [[self alloc] initWithProtocol:protocol];
 }
 
-- (id)initWithProtocol:(Protocol *)aProtocol
+- (instancetype)initWithProtocol:(Protocol *)aProtocol
 {
     HCRequireNonNilObject(aProtocol);
     
@@ -42,9 +42,7 @@
 @end
 
 
-#pragma mark -
-
-id<HCMatcher> HC_conformsTo(Protocol *aProtocol)
+id HC_conformsTo(Protocol *aProtocol)
 {
     return [HCConformsToProtocol conformsTo:aProtocol];
 }

@@ -15,12 +15,12 @@
 
 @implementation HCAnyOf
 
-+ (id)anyOf:(NSArray *)theMatchers
++ (instancetype)anyOf:(NSArray *)theMatchers
 {
     return [[self alloc] initWithMatchers:theMatchers];
 }
 
-- (id)initWithMatchers:(NSArray *)theMatchers
+- (instancetype)initWithMatchers:(NSArray *)theMatchers
 {
     self = [super init];
     if (self)
@@ -30,7 +30,7 @@
 
 - (BOOL)matches:(id)item
 {
-    for (id<HCMatcher> oneMatcher in matchers)
+    for (id <HCMatcher> oneMatcher in matchers)
         if ([oneMatcher matches:item])
             return YES;
     return NO;
@@ -44,9 +44,7 @@
 @end
 
 
-#pragma mark -
-
-id<HCMatcher> HC_anyOf(id match, ...)
+id HC_anyOf(id match, ...)
 {
     va_list args;
     va_start(args, match);

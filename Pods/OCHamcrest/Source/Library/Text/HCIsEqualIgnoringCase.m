@@ -15,12 +15,12 @@
 
 @implementation HCIsEqualIgnoringCase
 
-+ (id)isEqualIgnoringCase:(NSString *)aString
++ (instancetype)isEqualIgnoringCase:(NSString *)aString
 {
     return [[self alloc] initWithString:aString];
 }
 
-- (id)initWithString:(NSString *)aString
+- (instancetype)initWithString:(NSString *)aString
 {
     HCRequireNonNilObject(aString);
     
@@ -47,9 +47,7 @@
 @end
 
 
-#pragma mark -
-
-id<HCMatcher> HC_equalToIgnoringCase(NSString *aString)
+id HC_equalToIgnoringCase(NSString *aString)
 {
     return [HCIsEqualIgnoringCase isEqualIgnoringCase:aString];
 }

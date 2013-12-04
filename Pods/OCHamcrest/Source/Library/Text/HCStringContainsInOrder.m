@@ -14,12 +14,12 @@
 
 @implementation HCStringContainsInOrder
 
-+ (id)containsInOrder:(NSArray *)substringList
++ (instancetype)containsInOrder:(NSArray *)substringList
 {
     return [[self alloc] initWithSubstrings:substringList];
 }
 
-- (id)initWithSubstrings:(NSArray *)substringList
+- (instancetype)initWithSubstrings:(NSArray *)substringList
 {
     self = [super init];
     if (self)
@@ -64,9 +64,7 @@
 @end
 
 
-#pragma mark -
-
-id<HCMatcher> HC_stringContainsInOrder(NSString *substring, ...)
+id HC_stringContainsInOrder(NSString *substring, ...)
 {
     va_list args;
     va_start(args, substring);

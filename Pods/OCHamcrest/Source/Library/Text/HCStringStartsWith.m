@@ -12,7 +12,7 @@
 
 @implementation HCStringStartsWith
 
-+ (id)stringStartsWith:(NSString *)aSubstring
++ (instancetype)stringStartsWith:(NSString *)aSubstring
 {
     return [[self alloc] initWithSubstring:aSubstring];
 }
@@ -33,9 +33,7 @@
 @end
 
 
-#pragma mark -
-
-id<HCMatcher> HC_startsWith(NSString *aString)
+id HC_startsWith(NSString *aString)
 {
     return [HCStringStartsWith stringStartsWith:aString];
 }

@@ -1,6 +1,6 @@
 //
 //  OCMockito - MKTExactTimes.h
-//  Copyright 2012 Jonathan M. Reid. See LICENSE.txt
+//  Copyright 2013 Jonathan M. Reid. See LICENSE.txt
 //
 //  Created by: Jon Reid, http://qualitycoding.org/
 //  Source: https://github.com/jonreid/OCMockito
@@ -12,7 +12,6 @@
 
 @interface MKTExactTimes : NSObject <MKTVerificationMode>
 
-+ (id)timesWithCount:(NSUInteger)expectedNumberOfInvocations;
-- (id)initWithCount:(NSUInteger)expectedNumberOfInvocations;
+- (instancetype)initWithCount:(NSUInteger)expectedNumberOfInvocations;
 
 @end

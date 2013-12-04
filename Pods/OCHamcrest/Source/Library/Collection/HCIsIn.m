@@ -14,12 +14,12 @@
 
 @implementation HCIsIn
 
-+ (id)isInCollection:(id)aCollection
++ (instancetype)isInCollection:(id)aCollection
 {
     return [[self alloc] initWithCollection:aCollection];
 }
 
-- (id)initWithCollection:(id)aCollection
+- (instancetype)initWithCollection:(id)aCollection
 {
     if (![aCollection respondsToSelector:@selector(containsObject:)])
     {
@@ -48,9 +48,7 @@
 @end
 
 
-#pragma mark -
-
-id<HCMatcher> HC_isIn(id aCollection)
+id HC_isIn(id aCollection)
 {
     return [HCIsIn isInCollection:aCollection];
 }

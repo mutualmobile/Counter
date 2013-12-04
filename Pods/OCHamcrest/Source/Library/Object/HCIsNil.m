@@ -15,7 +15,7 @@
 
 @implementation HCIsNil
 
-+ (id)isNil
++ (instancetype)isNil
 {
     return [[self alloc] init];
 }
@@ -33,14 +33,12 @@
 @end
 
 
-#pragma mark -
-
-id<HCMatcher> HC_nilValue()
+id HC_nilValue()
 {
     return [HCIsNil isNil];
 }
 
-id<HCMatcher> HC_notNilValue()
+id HC_notNilValue()
 {
     return HC_isNot([HCIsNil isNil]);
 }

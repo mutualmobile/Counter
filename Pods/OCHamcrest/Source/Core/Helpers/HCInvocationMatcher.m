@@ -16,7 +16,6 @@
 
 @synthesize shortMismatchDescription;
 
-
 + (NSInvocation *)invocationForSelector:(SEL)selector onClass:(Class)aClass
 {
     NSMethodSignature* signature = [aClass instanceMethodSignatureForSelector:selector];
@@ -25,7 +24,7 @@
     return invocation;
 }
 
-- (id)initWithInvocation:(NSInvocation *)anInvocation matching:(id<HCMatcher>)aMatcher
+- (instancetype)initWithInvocation:(NSInvocation *)anInvocation matching:(id <HCMatcher>)aMatcher
 {
     self = [super init];
     if (self)
@@ -63,7 +62,7 @@
         [super describeMismatchOf:item to:mismatchDescription];
     else
     {
-        if (!shortMismatchDescription)
+        if (!self.shortMismatchDescription)
         {
             [[[[mismatchDescription appendDescriptionOf:item]
                                     appendText:@" "]

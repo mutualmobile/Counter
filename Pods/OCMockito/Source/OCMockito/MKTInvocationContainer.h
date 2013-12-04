@@ -1,6 +1,6 @@
 //
 //  OCMockito - MKTInvocationContainer.h
-//  Copyright 2012 Jonathan M. Reid. See LICENSE.txt
+//  Copyright 2013 Jonathan M. Reid. See LICENSE.txt
 //
 //  Created by: Jon Reid, http://qualitycoding.org/
 //  Source: https://github.com/jonreid/OCMockito
@@ -8,18 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-@class MKTMockingProgress;
+@class MKTInvocationMatcher;
+@class MKTStubbedInvocationMatcher;
 @protocol HCMatcher;
 
 
 @interface MKTInvocationContainer : NSObject
 
-@property (nonatomic, readonly) NSMutableArray *registeredInvocations;
+@property (nonatomic, strong, readonly) NSMutableArray *registeredInvocations;
 
-- (id)initWithMockingProgress:(MKTMockingProgress *)mockingProgress;
+- (instancetype)init;
 - (void)setInvocationForPotentialStubbing:(NSInvocation *)invocation;
 - (void)setMatcher:(id <HCMatcher>)matcher atIndex:(NSUInteger)argumentIndex;
 - (void)addAnswer:(id)answer;
-- (id)findAnswerFor:(NSInvocation *)invocation;
-
+- (MKTStubbedInvocationMatcher *)findAnswerFor:(NSInvocation *)invocation;
 @end

@@ -2,6 +2,6 @@ platform :ios, '6.0'
 
 target :'Tests' do
 	link_with ['CounterTests']
-    pod 'OCHamcrest', '~> 2.1.0'
-    pod 'OCMockito', :podspec => 'LocalPodspecs/OCMockito.podspec'
+    pod 'OCHamcrest', '~> 3.0.0'
+    pod 'OCMockito', '~> 1.1.0'
 end

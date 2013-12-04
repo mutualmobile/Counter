@@ -50,16 +50,14 @@ static NSMutableString *stripSpace(NSString *string)
 }
 
 
-#pragma mark -
-
 @implementation HCIsEqualIgnoringWhiteSpace
 
-+ (id)isEqualIgnoringWhiteSpace:(NSString *)aString
++ (instancetype)isEqualIgnoringWhiteSpace:(NSString *)aString
 {
     return [[self alloc] initWithString:aString];
 }
 
-- (id)initWithString:(NSString *)aString
+- (instancetype)initWithString:(NSString *)aString
 {
     HCRequireNonNilObject(aString);
     
@@ -89,9 +87,7 @@ static NSMutableString *stripSpace(NSString *string)
 @end
 
 
-#pragma mark -
-
-id<HCMatcher> HC_equalToIgnoringWhiteSpace(NSString *aString)
+id HC_equalToIgnoringWhiteSpace(NSString *aString)
 {
     return [HCIsEqualIgnoringWhiteSpace isEqualIgnoringWhiteSpace:aString];
 }

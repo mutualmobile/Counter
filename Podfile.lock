@@ -1,18 +1,14 @@
 PODS:
-  - OCHamcrest (2.1.0)
-  - OCMockito (0.23):
-    - OCHamcrest (~> 2.0)
+  - OCHamcrest (3.0.1)
+  - OCMockito (1.1.0):
+    - OCHamcrest (~> 3.0)
 
 DEPENDENCIES:
-  - OCHamcrest (~> 2.1.0)
-  - OCMockito (from `LocalPodspecs/OCMockito.podspec`)
-
-EXTERNAL SOURCES:
-  OCMockito:
-    :podspec: LocalPodspecs/OCMockito.podspec
+  - OCHamcrest (~> 3.0.0)
+  - OCMockito (~> 1.1.0)
 
 SPEC CHECKSUMS:
-  OCHamcrest: 96f5cb58fa0fd4b3609d37fe21e5246b259bba2a
-  OCMockito: 0d6c2ec01b37e9269243e7e7399933a622b5a88d
+  OCHamcrest: 782c52ae8c673e5d6060a65005cfd26d20d519ba
+  OCMockito: 317fa0cf75c9b0d73d2be335789c556537be7fd2
 
-COCOAPODS: 0.23.0
+COCOAPODS: 0.28.0

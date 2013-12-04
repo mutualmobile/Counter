@@ -1,6 +1,6 @@
 //
 //  OCMockito - MKTMockingProgress.m
-//  Copyright 2012 Jonathan M. Reid. See LICENSE.txt
+//  Copyright 2013 Jonathan M. Reid. See LICENSE.txt
 //
 //  Created by: Jon Reid, http://qualitycoding.org/
 //  Source: https://github.com/jonreid/OCMockito
@@ -13,19 +13,16 @@
 #import "MKTVerificationMode.h"
 
 
-@interface MKTMockingProgress ()
-@property (nonatomic, strong) MKTInvocationMatcher *invocationMatcher;
-@property (nonatomic, strong) id <MKTVerificationMode> verificationMode;
-@property (nonatomic, strong) MKTOngoingStubbing *ongoingStubbing;
-@end
-
-
 @implementation MKTMockingProgress
+{
+    MKTInvocationMatcher *_invocationMatcher;
+    id <MKTVerificationMode> _verificationMode;
+    MKTOngoingStubbing *_ongoingStubbing;
+}
 
-+ (id)sharedProgress
++ (instancetype)sharedProgress
 {
     static id sharedProgress = nil;
-    
     if (!sharedProgress)
         sharedProgress = [[self alloc] init];
     return sharedProgress;
@@ -38,26 +35,26 @@
 
 - (void)reportOngoingStubbing:(MKTOngoingStubbing *)ongoingStubbing
 {
-    [self setOngoingStubbing:ongoingStubbing];
+    _ongoingStubbing = ongoingStubbing;
 }
 
 - (MKTOngoingStubbing *)pullOngoingStubbing
 {
     MKTOngoingStubbing *result = _ongoingStubbing;
-    [self setOngoingStubbing:nil];
+    _ongoingStubbing = nil;
     return result;
 }
 
 - (void)verificationStarted:(id <MKTVerificationMode>)mode atLocation:(MKTTestLocation)location
 {
-    [self setVerificationMode:mode];
+    _verificationMode = mode;
     [self setTestLocation:location];
 }
 
 - (id <MKTVerificationMode>)pullVerificationMode
 {
     id <MKTVerificationMode> result = _verificationMode;
-    [self setVerificationMode:nil];
+    _verificationMode = nil;
     return result;
 }
 
@@ -65,13 +62,13 @@
 {
     if (!_invocationMatcher)
         _invocationMatcher = [[MKTInvocationMatcher alloc] init];
-    [_invocationMatcher setMatcher:matcher atIndex:index+2];
+    [_invocationMatcher setMatcher:matcher atIndex:index];
 }
 
 - (MKTInvocationMatcher *)pullInvocationMatcher
 {
     MKTInvocationMatcher *result = _invocationMatcher;
-    [self setInvocationMatcher:nil];
+    _invocationMatcher = nil;
     return result;
 }
 

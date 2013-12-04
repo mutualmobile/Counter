@@ -15,12 +15,12 @@
 
 @implementation HCIs
 
-+ (id)is:(id<HCMatcher>)aMatcher
++ (instancetype)is:(id <HCMatcher>)aMatcher
 {
     return [[self alloc] initWithMatcher:aMatcher];
 }
 
-- (id)initWithMatcher:(id<HCMatcher>)aMatcher
+- (instancetype)initWithMatcher:(id <HCMatcher>)aMatcher
 {
     self = [super init];
     if (self)
@@ -46,9 +46,7 @@
 @end
 
 
-#pragma mark -
-
-id<HCMatcher> HC_is(id match)
+id HC_is(id match)
 {
     return [HCIs is:HCWrapInMatcher(match)];
 }

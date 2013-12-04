@@ -14,12 +14,12 @@
 
 @implementation HCIsEqual
 
-+ (id)isEqualTo:(id)anObject
++ (instancetype)isEqualTo:(id)anObject
 {
     return [[self alloc] initEqualTo:anObject];
 }
 
-- (id)initEqualTo:(id)anObject
+- (instancetype)initEqualTo:(id)anObject
 {
     self = [super init];
     if (self)
@@ -50,9 +50,7 @@
 @end
 
 
-#pragma mark -
-
-id<HCMatcher> HC_equalTo(id object)
+id HC_equalTo(id object)
 {
     return [HCIsEqual isEqualTo:object];
 }

@@ -1,6 +1,6 @@
 //
 //  OCMockito - MKTObjectMock.m
-//  Copyright 2012 Jonathan M. Reid. See LICENSE.txt
+//  Copyright 2013 Jonathan M. Reid. See LICENSE.txt
 //
 //  Created by: Jon Reid, http://qualitycoding.org/
 //  Source: https://github.com/jonreid/OCMockito
@@ -14,17 +14,22 @@
     Class _mockedClass;
 }
 
-+ (id)mockForClass:(Class)aClass
++ (instancetype)mockForClass:(Class)aClass
 {
     return [[self alloc] initWithClass:aClass];
 }
 
-- (id)initWithClass:(Class)aClass
+- (instancetype)initWithClass:(Class)aClass
 {
     self = [super init];
     if (self)
         _mockedClass = aClass;
     return self;
+}
+
+- (NSString *)description
+{
+    return [@"mock object of " stringByAppendingString:NSStringFromClass(_mockedClass)];
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector
