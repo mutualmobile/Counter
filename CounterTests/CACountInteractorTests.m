@@ -18,7 +18,7 @@
 #define assertCountEquals(expected) assertThatUnsignedInteger(self.count, equalToUnsignedInteger(expected))
 
 
-@interface CACountInteractorTests : SenTestCase <CACountInteractorOutput>
+@interface CACountInteractorTests : SenTestCase <CNTCountInteractorOutput>
 @property (nonatomic, strong)   id<CNTCountInteractorInput>  interactor;
 @property (nonatomic, assign)   NSUInteger                  count;
 @end

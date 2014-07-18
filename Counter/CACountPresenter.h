@@ -11,7 +11,7 @@
 #import "CACountInteractorIO.h"
 
 
-@interface CACountPresenter : NSObject <CACountInteractorOutput>
+@interface CACountPresenter : NSObject <CNTCountInteractorOutput>
 @property (nonatomic, weak)     id<CACountView>             view;
 @property (nonatomic, strong)   id<CNTCountInteractorInput>  interactor;
 

@@ -11,5 +11,5 @@
 
 
 @interface CACountInteractor : NSObject <CNTCountInteractorInput>
-@property (nonatomic, weak) id<CACountInteractorOutput> output;
+@property (nonatomic, weak) id<CNTCountInteractorOutput> output;
 @end

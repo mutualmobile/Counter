@@ -16,6 +16,6 @@
 @end
 
 
-@protocol CACountInteractorOutput <NSObject>
+@protocol CNTCountInteractorOutput <NSObject>
 - (void)updateCount:(NSUInteger)count;
 @end
