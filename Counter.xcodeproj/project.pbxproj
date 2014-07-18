@@ -26,7 +26,7 @@
 		CFBFC3D217C6A41D00004DE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFC3AC17C6A41D00004DE1 /* UIKit.framework */; };
 		CFBFC3D317C6A41D00004DE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFC3AE17C6A41D00004DE1 /* Foundation.framework */; };
 		CFBFC3DB17C6A41D00004DE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFBFC3D917C6A41D00004DE1 /* InfoPlist.strings */; };
-		CFBFC3E817C6A63500004DE1 /* CACountInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC3E717C6A63500004DE1 /* CACountInteractorTests.m */; };
+		CFBFC3E817C6A63500004DE1 /* CNTCountInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC3E717C6A63500004DE1 /* CNTCountInteractorTests.m */; };
 		CFBFC3EC17C6A89700004DE1 /* CNTCountInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC3EB17C6A89700004DE1 /* CNTCountInteractor.m */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +67,7 @@
 		CFBFC3D017C6A41D00004DE1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		CFBFC3D817C6A41D00004DE1 /* CounterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CounterTests-Info.plist"; sourceTree = "<group>"; };
 		CFBFC3DA17C6A41D00004DE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CFBFC3E717C6A63500004DE1 /* CACountInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACountInteractorTests.m; sourceTree = "<group>"; };
+		CFBFC3E717C6A63500004DE1 /* CNTCountInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTCountInteractorTests.m; sourceTree = "<group>"; };
 		CFBFC3EA17C6A89700004DE1 /* CNTCountInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTCountInteractor.h; sourceTree = "<group>"; };
 		CFBFC3EB17C6A89700004DE1 /* CNTCountInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTCountInteractor.m; sourceTree = "<group>"; };
 		CFBFC3EF17C6A9E500004DE1 /* CNTCountInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNTCountInteractorIO.h; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 		CFBFC3D617C6A41D00004DE1 /* CounterTests */ = {
 			isa = PBXGroup;
 			children = (
-				CFBFC3E717C6A63500004DE1 /* CACountInteractorTests.m */,
+				CFBFC3E717C6A63500004DE1 /* CNTCountInteractorTests.m */,
 				CF0DB9A817C7D9B20062B5F6 /* CACountPresenterTests.m */,
 				CF0DB9AE17C837390062B5F6 /* CACountViewControllerTests.m */,
 				CFBFC3D717C6A41D00004DE1 /* Supporting Files */,
@@ -339,7 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFBFC3E817C6A63500004DE1 /* CACountInteractorTests.m in Sources */,
+				CFBFC3E817C6A63500004DE1 /* CNTCountInteractorTests.m in Sources */,
 				CF0DB9A917C7D9B20062B5F6 /* CACountPresenterTests.m in Sources */,
 				CF0DB9AF17C837390062B5F6 /* CACountViewControllerTests.m in Sources */,
 			);
