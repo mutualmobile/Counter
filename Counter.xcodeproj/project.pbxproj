@@ -70,7 +70,7 @@
 		CFBFC3E717C6A63500004DE1 /* CACountInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACountInteractorTests.m; sourceTree = "<group>"; };
 		CFBFC3EA17C6A89700004DE1 /* CACountInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACountInteractor.h; sourceTree = "<group>"; };
 		CFBFC3EB17C6A89700004DE1 /* CACountInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACountInteractor.m; sourceTree = "<group>"; };
-		CFBFC3EF17C6A9E500004DE1 /* CACountInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CACountInteractorIO.h; sourceTree = "<group>"; };
+		CFBFC3EF17C6A9E500004DE1 /* CNTCountInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNTCountInteractorIO.h; sourceTree = "<group>"; };
 		F4DA1622EB34456CA7BE5285 /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -136,7 +136,7 @@
 			children = (
 				CFBFC3BB17C6A41D00004DE1 /* CNTAppDelegate.h */,
 				CFBFC3BC17C6A41D00004DE1 /* CNTAppDelegate.m */,
-				CFBFC3EF17C6A9E500004DE1 /* CACountInteractorIO.h */,
+				CFBFC3EF17C6A9E500004DE1 /* CNTCountInteractorIO.h */,
 				CFBFC3EA17C6A89700004DE1 /* CACountInteractor.h */,
 				CFBFC3EB17C6A89700004DE1 /* CACountInteractor.m */,
 				CF0DB9AA17C7D9FF0062B5F6 /* CACountPresenter.h */,

@@ -10,7 +10,7 @@
 
 // Collaborators
 #import "CACountView.h"
-#import "CACountInteractorIO.h"
+#import "CNTCountInteractorIO.h"
 
 // Test support
 #import <SenTestingKit/SenTestingKit.h>

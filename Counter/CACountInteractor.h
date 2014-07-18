@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CACountInteractorIO.h"
+#import "CNTCountInteractorIO.h"
 
 
 @interface CACountInteractor : NSObject <CNTCountInteractorInput>

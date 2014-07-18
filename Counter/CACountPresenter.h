@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CACountView.h"
-#import "CACountInteractorIO.h"
+#import "CNTCountInteractorIO.h"
 
 
 @interface CACountPresenter : NSObject <CNTCountInteractorOutput>
