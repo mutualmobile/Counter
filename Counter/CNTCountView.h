@@ -1,5 +1,5 @@
 //
-//  CACountView.h
+//  CNTCountView.h
 //  Counter
 //
 //  Created by Jeff Gilbert on 8/23/13.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@protocol CACountView <NSObject>
+@protocol CNTCountView <NSObject>
 - (void)setCountText:(NSString*)countText;
 - (void)setDecrementEnabled:(BOOL)enabled;
 @end

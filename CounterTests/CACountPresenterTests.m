@@ -9,7 +9,7 @@
 #import "CNTCountPresenter.h"
 
 // Collaborators
-#import "CACountView.h"
+#import "CNTCountView.h"
 #import "CNTCountInteractorIO.h"
 
 // Test support
@@ -21,7 +21,7 @@
 
 @interface CACountPresenterTests : SenTestCase
 @property (nonatomic, strong)   CNTCountPresenter*          presenter;
-@property (nonatomic, strong)   id<CACountView>             view;
+@property (nonatomic, strong)   id<CNTCountView>            view;
 @property (nonatomic, strong)   id<CNTCountInteractorInput> interactor;
 @end
 
@@ -34,7 +34,7 @@
     
     self.presenter = [[CNTCountPresenter alloc] init];
     
-    self.view = mockProtocol(@protocol(CACountView));
+    self.view = mockProtocol(@protocol(CNTCountView));
     self.presenter.view = self.view;
     
     self.interactor = mockProtocol(@protocol(CNTCountInteractorInput));

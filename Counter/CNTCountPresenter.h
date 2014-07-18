@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CACountView.h"
+#import "CNTCountView.h"
 #import "CNTCountInteractorIO.h"
 
 
 @interface CNTCountPresenter : NSObject <CNTCountInteractorOutput>
-@property (nonatomic, weak)     id<CACountView>             view;
+@property (nonatomic, weak)     id<CNTCountView>            view;
 @property (nonatomic, strong)   id<CNTCountInteractorInput> interactor;
 
 - (void)updateView;

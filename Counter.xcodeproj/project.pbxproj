@@ -45,7 +45,7 @@
 		CF0DB9A817C7D9B20062B5F6 /* CACountPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACountPresenterTests.m; sourceTree = "<group>"; };
 		CF0DB9AA17C7D9FF0062B5F6 /* CNTCountPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTCountPresenter.h; sourceTree = "<group>"; };
 		CF0DB9AB17C7D9FF0062B5F6 /* CNTCountPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTCountPresenter.m; sourceTree = "<group>"; };
-		CF0DB9AD17C7DB770062B5F6 /* CACountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CACountView.h; sourceTree = "<group>"; };
+		CF0DB9AD17C7DB770062B5F6 /* CNTCountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNTCountView.h; sourceTree = "<group>"; };
 		CF0DB9AE17C837390062B5F6 /* CACountViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACountViewControllerTests.m; sourceTree = "<group>"; };
 		CF0DB9B017C837B40062B5F6 /* CACountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACountViewController.h; sourceTree = "<group>"; };
 		CF0DB9B117C837B40062B5F6 /* CACountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACountViewController.m; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 				CFBFC3EB17C6A89700004DE1 /* CNTCountInteractor.m */,
 				CF0DB9AA17C7D9FF0062B5F6 /* CNTCountPresenter.h */,
 				CF0DB9AB17C7D9FF0062B5F6 /* CNTCountPresenter.m */,
-				CF0DB9AD17C7DB770062B5F6 /* CACountView.h */,
+				CF0DB9AD17C7DB770062B5F6 /* CNTCountView.h */,
 				CF0DB9B017C837B40062B5F6 /* CACountViewController.h */,
 				CF0DB9B117C837B40062B5F6 /* CACountViewController.m */,
 				CF0DB9B317C839E90062B5F6 /* CACountViewController.xib */,
