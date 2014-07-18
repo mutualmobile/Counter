@@ -231,7 +231,7 @@
 		CFBFC3A117C6A41D00004DE1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = CA;
+				CLASSPREFIX = CNT;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Mutual Mobile";
 			};
