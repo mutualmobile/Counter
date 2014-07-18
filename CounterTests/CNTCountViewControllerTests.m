@@ -25,13 +25,13 @@
 #define assertDecrementButtonEnabledEquals(expected) assertThatBool(self.view.decrementButton.enabled, equalToBool(expected))
 
 
-@interface CACountViewControllerTests : SenTestCase
+@interface CNTCountViewControllerTests : SenTestCase
 @property (nonatomic, strong)   CNTCountViewController* view;
 @property (nonatomic, strong)   CNTCountPresenter*      presenter;
 @end
 
 
-@implementation CACountViewControllerTests
+@implementation CNTCountViewControllerTests
 
 - (void)setUp
 {
