@@ -19,14 +19,14 @@
 #import "OCMockito.h"
 
 
-@interface CACountPresenterTests : SenTestCase
+@interface CNTCountPresenterTests : SenTestCase
 @property (nonatomic, strong)   CNTCountPresenter*          presenter;
 @property (nonatomic, strong)   id<CNTCountView>            view;
 @property (nonatomic, strong)   id<CNTCountInteractorInput> interactor;
 @end
 
 
-@implementation CACountPresenterTests
+@implementation CNTCountPresenterTests
 
 - (void)setUp
 {
