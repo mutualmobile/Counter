@@ -19,7 +19,7 @@
 
 
 @interface CACountInteractorTests : SenTestCase <CACountInteractorOutput>
-@property (nonatomic, strong)   id<CACountInteractorInput>  interactor;
+@property (nonatomic, strong)   id<CNTCountInteractorInput>  interactor;
 @property (nonatomic, assign)   NSUInteger                  count;
 @end
 

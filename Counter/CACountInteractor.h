@@ -10,6 +10,6 @@
 #import "CACountInteractorIO.h"
 
 
-@interface CACountInteractor : NSObject <CACountInteractorInput>
+@interface CACountInteractor : NSObject <CNTCountInteractorInput>
 @property (nonatomic, weak) id<CACountInteractorOutput> output;
 @end

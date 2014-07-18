@@ -22,7 +22,7 @@
 @interface CACountPresenterTests : SenTestCase
 @property (nonatomic, strong)   CACountPresenter*           presenter;
 @property (nonatomic, strong)   id<CACountView>             view;
-@property (nonatomic, strong)   id<CACountInteractorInput>  interactor;
+@property (nonatomic, strong)   id<CNTCountInteractorInput>  interactor;
 @end
 
 
@@ -37,7 +37,7 @@
     self.view = mockProtocol(@protocol(CACountView));
     self.presenter.view = self.view;
     
-    self.interactor = mockProtocol(@protocol(CACountInteractorInput));
+    self.interactor = mockProtocol(@protocol(CNTCountInteractorInput));
     self.presenter.interactor = self.interactor;
 }
 

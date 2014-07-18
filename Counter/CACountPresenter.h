@@ -13,7 +13,7 @@
 
 @interface CACountPresenter : NSObject <CACountInteractorOutput>
 @property (nonatomic, weak)     id<CACountView>             view;
-@property (nonatomic, strong)   id<CACountInteractorInput>  interactor;
+@property (nonatomic, strong)   id<CNTCountInteractorInput>  interactor;
 
 - (void)updateView;
 - (void)increment;
