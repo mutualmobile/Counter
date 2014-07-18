@@ -6,7 +6,7 @@
 //
 
 // Class under test
-#import "CACountInteractor.h"
+#import "CNTCountInteractor.h"
 
 // Test support
 #import <SenTestingKit/SenTestingKit.h>
@@ -30,7 +30,7 @@
 {
     [super setUp];
     
-    CACountInteractor* interactor = [[CACountInteractor alloc] init];
+    CNTCountInteractor* interactor = [[CNTCountInteractor alloc] init];
     interactor.output = self;
     self.interactor = interactor;
 }

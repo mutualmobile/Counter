@@ -7,7 +7,7 @@
 //
 
 #import "CNTAppDelegate.h"
-#import "CACountInteractor.h"
+#import "CNTCountInteractor.h"
 #import "CACountPresenter.h"
 #import "CACountViewController.h"
 
@@ -30,7 +30,7 @@
 {
 	CACountViewController* view = [[CACountViewController alloc] init];
 	CACountPresenter* presenter = [[CACountPresenter alloc] init];
-	CACountInteractor* interactor = [[CACountInteractor alloc] init];
+	CNTCountInteractor* interactor = [[CNTCountInteractor alloc] init];
 
     view.presenter = presenter;
     presenter.view = view;

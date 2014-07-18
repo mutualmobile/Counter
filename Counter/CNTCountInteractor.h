@@ -1,5 +1,5 @@
 //
-//  CACountInteractor.h
+//  CNTCountInteractor.h
 //  Counter
 //
 //  Created by Jeff Gilbert on 8/22/13.
@@ -10,6 +10,6 @@
 #import "CNTCountInteractorIO.h"
 
 
-@interface CACountInteractor : NSObject <CNTCountInteractorInput>
+@interface CNTCountInteractor : NSObject <CNTCountInteractorInput>
 @property (nonatomic, weak) id<CNTCountInteractorOutput> output;
 @end
