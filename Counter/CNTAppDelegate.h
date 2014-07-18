@@ -1,5 +1,5 @@
 //
-//  CAAppDelegate.h
+//  CNTAppDelegate.h
 //  Counter
 //
 //  Created by Jeff Gilbert on 8/22/13.
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 
-@interface CAAppDelegate : UIResponder <UIApplicationDelegate>
+@interface CNTAppDelegate : UIResponder <UIApplicationDelegate>
 @property (strong, nonatomic) UIWindow* window;
 @end

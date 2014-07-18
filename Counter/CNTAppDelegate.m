@@ -1,18 +1,18 @@
 //
-//  CAAppDelegate.m
+//  CNTAppDelegate.m
 //  Counter
 //
 //  Created by Jeff Gilbert on 8/22/13.
 //  Copyright (c) 2013 Mutual Mobile. All rights reserved.
 //
 
-#import "CAAppDelegate.h"
+#import "CNTAppDelegate.h"
 #import "CACountInteractor.h"
 #import "CACountPresenter.h"
 #import "CACountViewController.h"
 
 
-@implementation CAAppDelegate
+@implementation CNTAppDelegate
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {

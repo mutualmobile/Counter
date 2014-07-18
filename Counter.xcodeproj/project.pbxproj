@@ -18,7 +18,7 @@
 		CFBFC3B117C6A41D00004DE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFC3B017C6A41D00004DE1 /* CoreGraphics.framework */; };
 		CFBFC3B717C6A41D00004DE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFBFC3B517C6A41D00004DE1 /* InfoPlist.strings */; };
 		CFBFC3B917C6A41D00004DE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC3B817C6A41D00004DE1 /* main.m */; };
-		CFBFC3BD17C6A41D00004DE1 /* CAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC3BC17C6A41D00004DE1 /* CAAppDelegate.m */; };
+		CFBFC3BD17C6A41D00004DE1 /* CNTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC3BC17C6A41D00004DE1 /* CNTAppDelegate.m */; };
 		CFBFC3BF17C6A41D00004DE1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CFBFC3BE17C6A41D00004DE1 /* Default.png */; };
 		CFBFC3C117C6A41D00004DE1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFBFC3C017C6A41D00004DE1 /* Default@2x.png */; };
 		CFBFC3C317C6A41D00004DE1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFBFC3C217C6A41D00004DE1 /* Default-568h@2x.png */; };
@@ -58,8 +58,8 @@
 		CFBFC3B617C6A41D00004DE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CFBFC3B817C6A41D00004DE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CFBFC3BA17C6A41D00004DE1 /* Counter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Counter-Prefix.pch"; sourceTree = "<group>"; };
-		CFBFC3BB17C6A41D00004DE1 /* CAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAAppDelegate.h; sourceTree = "<group>"; };
-		CFBFC3BC17C6A41D00004DE1 /* CAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAAppDelegate.m; sourceTree = "<group>"; };
+		CFBFC3BB17C6A41D00004DE1 /* CNTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNTAppDelegate.h; sourceTree = "<group>"; };
+		CFBFC3BC17C6A41D00004DE1 /* CNTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNTAppDelegate.m; sourceTree = "<group>"; };
 		CFBFC3BE17C6A41D00004DE1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CFBFC3C017C6A41D00004DE1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CFBFC3C217C6A41D00004DE1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -134,8 +134,8 @@
 		CFBFC3B217C6A41D00004DE1 /* Counter */ = {
 			isa = PBXGroup;
 			children = (
-				CFBFC3BB17C6A41D00004DE1 /* CAAppDelegate.h */,
-				CFBFC3BC17C6A41D00004DE1 /* CAAppDelegate.m */,
+				CFBFC3BB17C6A41D00004DE1 /* CNTAppDelegate.h */,
+				CFBFC3BC17C6A41D00004DE1 /* CNTAppDelegate.m */,
 				CFBFC3EF17C6A9E500004DE1 /* CACountInteractorIO.h */,
 				CFBFC3EA17C6A89700004DE1 /* CACountInteractor.h */,
 				CFBFC3EB17C6A89700004DE1 /* CACountInteractor.m */,
@@ -328,7 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFBFC3B917C6A41D00004DE1 /* main.m in Sources */,
-				CFBFC3BD17C6A41D00004DE1 /* CAAppDelegate.m in Sources */,
+				CFBFC3BD17C6A41D00004DE1 /* CNTAppDelegate.m in Sources */,
 				CFBFC3EC17C6A89700004DE1 /* CACountInteractor.m in Sources */,
 				CF0DB9AC17C7D9FF0062B5F6 /* CACountPresenter.m in Sources */,
 				CF0DB9B217C837B40062B5F6 /* CACountViewController.m in Sources */,
