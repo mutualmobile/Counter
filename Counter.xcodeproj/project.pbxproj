@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6404442D29D84B1FA3050836 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97252028FD0644648F55C910 /* libPods-Tests.a */; };
 		CF0DB9A917C7D9B20062B5F6 /* CACountPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9A817C7D9B20062B5F6 /* CACountPresenterTests.m */; };
-		CF0DB9AC17C7D9FF0062B5F6 /* CACountPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9AB17C7D9FF0062B5F6 /* CACountPresenter.m */; };
+		CF0DB9AC17C7D9FF0062B5F6 /* CNTCountPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9AB17C7D9FF0062B5F6 /* CNTCountPresenter.m */; };
 		CF0DB9AF17C837390062B5F6 /* CACountViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9AE17C837390062B5F6 /* CACountViewControllerTests.m */; };
 		CF0DB9B217C837B40062B5F6 /* CACountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9B117C837B40062B5F6 /* CACountViewController.m */; };
 		CF0DB9B417C839E90062B5F6 /* CACountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0DB9B317C839E90062B5F6 /* CACountViewController.xib */; };
@@ -43,8 +43,8 @@
 /* Begin PBXFileReference section */
 		97252028FD0644648F55C910 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF0DB9A817C7D9B20062B5F6 /* CACountPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACountPresenterTests.m; sourceTree = "<group>"; };
-		CF0DB9AA17C7D9FF0062B5F6 /* CACountPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACountPresenter.h; sourceTree = "<group>"; };
-		CF0DB9AB17C7D9FF0062B5F6 /* CACountPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACountPresenter.m; sourceTree = "<group>"; };
+		CF0DB9AA17C7D9FF0062B5F6 /* CNTCountPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTCountPresenter.h; sourceTree = "<group>"; };
+		CF0DB9AB17C7D9FF0062B5F6 /* CNTCountPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTCountPresenter.m; sourceTree = "<group>"; };
 		CF0DB9AD17C7DB770062B5F6 /* CACountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CACountView.h; sourceTree = "<group>"; };
 		CF0DB9AE17C837390062B5F6 /* CACountViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACountViewControllerTests.m; sourceTree = "<group>"; };
 		CF0DB9B017C837B40062B5F6 /* CACountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACountViewController.h; sourceTree = "<group>"; };
@@ -139,8 +139,8 @@
 				CFBFC3EF17C6A9E500004DE1 /* CNTCountInteractorIO.h */,
 				CFBFC3EA17C6A89700004DE1 /* CNTCountInteractor.h */,
 				CFBFC3EB17C6A89700004DE1 /* CNTCountInteractor.m */,
-				CF0DB9AA17C7D9FF0062B5F6 /* CACountPresenter.h */,
-				CF0DB9AB17C7D9FF0062B5F6 /* CACountPresenter.m */,
+				CF0DB9AA17C7D9FF0062B5F6 /* CNTCountPresenter.h */,
+				CF0DB9AB17C7D9FF0062B5F6 /* CNTCountPresenter.m */,
 				CF0DB9AD17C7DB770062B5F6 /* CACountView.h */,
 				CF0DB9B017C837B40062B5F6 /* CACountViewController.h */,
 				CF0DB9B117C837B40062B5F6 /* CACountViewController.m */,
@@ -330,7 +330,7 @@
 				CFBFC3B917C6A41D00004DE1 /* main.m in Sources */,
 				CFBFC3BD17C6A41D00004DE1 /* CNTAppDelegate.m in Sources */,
 				CFBFC3EC17C6A89700004DE1 /* CNTCountInteractor.m in Sources */,
-				CF0DB9AC17C7D9FF0062B5F6 /* CACountPresenter.m in Sources */,
+				CF0DB9AC17C7D9FF0062B5F6 /* CNTCountPresenter.m in Sources */,
 				CF0DB9B217C837B40062B5F6 /* CACountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

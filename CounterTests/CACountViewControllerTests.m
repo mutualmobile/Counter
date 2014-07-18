@@ -9,7 +9,7 @@
 #import "CACountViewController.h"
 
 // Collaborators
-#import "CACountPresenter.h"
+#import "CNTCountPresenter.h"
 
 // Test support
 #import <SenTestingKit/SenTestingKit.h>
@@ -27,7 +27,7 @@
 
 @interface CACountViewControllerTests : SenTestCase
 @property (nonatomic, strong)   CACountViewController*  view;
-@property (nonatomic, strong)   CACountPresenter*       presenter;
+@property (nonatomic, strong)   CNTCountPresenter*      presenter;
 @end
 
 
@@ -40,7 +40,7 @@
     self.view = [[CACountViewController alloc] init];
     [self.view view];   // force the view to load
     
-    self.presenter = mock([CACountPresenter class]);
+    self.presenter = mock([CNTCountPresenter class]);
     self.view.presenter = self.presenter;
 }
 

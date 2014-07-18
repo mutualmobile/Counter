@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CACountView.h"
 
-@class CACountPresenter;
+@class CNTCountPresenter;
 
 
 @interface CACountViewController : UIViewController <CACountView>
@@ -17,5 +17,5 @@
 @property (nonatomic, weak) IBOutlet    UIButton*   decrementButton;
 @property (nonatomic, weak) IBOutlet    UIButton*   incrementButton;
 
-@property (nonatomic, strong)   CACountPresenter*   presenter;
+@property (nonatomic, strong)   CNTCountPresenter*  presenter;
 @end
