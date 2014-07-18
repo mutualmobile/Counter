@@ -1,5 +1,5 @@
 //
-//  CACountViewController.h
+//  CNTCountViewController.h
 //  Counter
 //
 //  Created by Jeff Gilbert on 8/23/13.
@@ -12,7 +12,7 @@
 @class CNTCountPresenter;
 
 
-@interface CACountViewController : UIViewController <CNTCountView>
+@interface CNTCountViewController : UIViewController <CNTCountView>
 @property (nonatomic, weak) IBOutlet    UILabel*    countLabel;
 @property (nonatomic, weak) IBOutlet    UIButton*   decrementButton;
 @property (nonatomic, weak) IBOutlet    UIButton*   incrementButton;

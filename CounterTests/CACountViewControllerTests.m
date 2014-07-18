@@ -6,7 +6,7 @@
 //
 
 // Class under test
-#import "CACountViewController.h"
+#import "CNTCountViewController.h"
 
 // Collaborators
 #import "CNTCountPresenter.h"
@@ -26,7 +26,7 @@
 
 
 @interface CACountViewControllerTests : SenTestCase
-@property (nonatomic, strong)   CACountViewController*  view;
+@property (nonatomic, strong)   CNTCountViewController* view;
 @property (nonatomic, strong)   CNTCountPresenter*      presenter;
 @end
 
@@ -37,7 +37,7 @@
 {
     [super setUp];
     
-    self.view = [[CACountViewController alloc] init];
+    self.view = [[CNTCountViewController alloc] init];
     [self.view view];   // force the view to load
     
     self.presenter = mock([CNTCountPresenter class]);

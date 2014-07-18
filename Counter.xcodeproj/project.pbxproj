@@ -11,8 +11,8 @@
 		CF0DB9A917C7D9B20062B5F6 /* CACountPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9A817C7D9B20062B5F6 /* CACountPresenterTests.m */; };
 		CF0DB9AC17C7D9FF0062B5F6 /* CNTCountPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9AB17C7D9FF0062B5F6 /* CNTCountPresenter.m */; };
 		CF0DB9AF17C837390062B5F6 /* CACountViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9AE17C837390062B5F6 /* CACountViewControllerTests.m */; };
-		CF0DB9B217C837B40062B5F6 /* CACountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9B117C837B40062B5F6 /* CACountViewController.m */; };
-		CF0DB9B417C839E90062B5F6 /* CACountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0DB9B317C839E90062B5F6 /* CACountViewController.xib */; };
+		CF0DB9B217C837B40062B5F6 /* CNTCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9B117C837B40062B5F6 /* CNTCountViewController.m */; };
+		CF0DB9B417C839E90062B5F6 /* CNTCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0DB9B317C839E90062B5F6 /* CNTCountViewController.xib */; };
 		CFBFC3AD17C6A41D00004DE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFC3AC17C6A41D00004DE1 /* UIKit.framework */; };
 		CFBFC3AF17C6A41D00004DE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFC3AE17C6A41D00004DE1 /* Foundation.framework */; };
 		CFBFC3B117C6A41D00004DE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFC3B017C6A41D00004DE1 /* CoreGraphics.framework */; };
@@ -47,9 +47,9 @@
 		CF0DB9AB17C7D9FF0062B5F6 /* CNTCountPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTCountPresenter.m; sourceTree = "<group>"; };
 		CF0DB9AD17C7DB770062B5F6 /* CNTCountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNTCountView.h; sourceTree = "<group>"; };
 		CF0DB9AE17C837390062B5F6 /* CACountViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACountViewControllerTests.m; sourceTree = "<group>"; };
-		CF0DB9B017C837B40062B5F6 /* CACountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACountViewController.h; sourceTree = "<group>"; };
-		CF0DB9B117C837B40062B5F6 /* CACountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACountViewController.m; sourceTree = "<group>"; };
-		CF0DB9B317C839E90062B5F6 /* CACountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CACountViewController.xib; sourceTree = "<group>"; };
+		CF0DB9B017C837B40062B5F6 /* CNTCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTCountViewController.h; sourceTree = "<group>"; };
+		CF0DB9B117C837B40062B5F6 /* CNTCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTCountViewController.m; sourceTree = "<group>"; };
+		CF0DB9B317C839E90062B5F6 /* CNTCountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CNTCountViewController.xib; sourceTree = "<group>"; };
 		CFBFC3A917C6A41D00004DE1 /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBFC3AC17C6A41D00004DE1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CFBFC3AE17C6A41D00004DE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -142,9 +142,9 @@
 				CF0DB9AA17C7D9FF0062B5F6 /* CNTCountPresenter.h */,
 				CF0DB9AB17C7D9FF0062B5F6 /* CNTCountPresenter.m */,
 				CF0DB9AD17C7DB770062B5F6 /* CNTCountView.h */,
-				CF0DB9B017C837B40062B5F6 /* CACountViewController.h */,
-				CF0DB9B117C837B40062B5F6 /* CACountViewController.m */,
-				CF0DB9B317C839E90062B5F6 /* CACountViewController.xib */,
+				CF0DB9B017C837B40062B5F6 /* CNTCountViewController.h */,
+				CF0DB9B117C837B40062B5F6 /* CNTCountViewController.m */,
+				CF0DB9B317C839E90062B5F6 /* CNTCountViewController.xib */,
 				CFBFC3B317C6A41D00004DE1 /* Supporting Files */,
 			);
 			path = Counter;
@@ -262,7 +262,7 @@
 				CFBFC3BF17C6A41D00004DE1 /* Default.png in Resources */,
 				CFBFC3C117C6A41D00004DE1 /* Default@2x.png in Resources */,
 				CFBFC3C317C6A41D00004DE1 /* Default-568h@2x.png in Resources */,
-				CF0DB9B417C839E90062B5F6 /* CACountViewController.xib in Resources */,
+				CF0DB9B417C839E90062B5F6 /* CNTCountViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +331,7 @@
 				CFBFC3BD17C6A41D00004DE1 /* CNTAppDelegate.m in Sources */,
 				CFBFC3EC17C6A89700004DE1 /* CNTCountInteractor.m in Sources */,
 				CF0DB9AC17C7D9FF0062B5F6 /* CNTCountPresenter.m in Sources */,
-				CF0DB9B217C837B40062B5F6 /* CACountViewController.m in Sources */,
+				CF0DB9B217C837B40062B5F6 /* CNTCountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

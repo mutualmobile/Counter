@@ -9,7 +9,7 @@
 #import "CNTAppDelegate.h"
 #import "CNTCountInteractor.h"
 #import "CNTCountPresenter.h"
-#import "CACountViewController.h"
+#import "CNTCountViewController.h"
 
 
 @implementation CNTAppDelegate
@@ -28,7 +28,7 @@
 
 - (void)createScreen
 {
-	CACountViewController* view = [[CACountViewController alloc] init];
+	CNTCountViewController* view = [[CNTCountViewController alloc] init];
 	CNTCountPresenter* presenter = [[CNTCountPresenter alloc] init];
 	CNTCountInteractor* interactor = [[CNTCountInteractor alloc] init];
 
