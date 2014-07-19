@@ -6,15 +6,15 @@
 //  Copyright (c) 2013 Mutual Mobile. All rights reserved.
 //
 
-#import "CACountInteractor.h"
+#import "CNTCountInteractor.h"
 
 
-@interface CACountInteractor()
+@interface CNTCountInteractor()
 @property (nonatomic, assign)   NSUInteger  count;
 @end
 
 
-@implementation CACountInteractor
+@implementation CNTCountInteractor
 
 - (void)requestCount
 {

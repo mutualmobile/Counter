@@ -6,7 +6,7 @@
 //
 
 // Class under test
-#import "CACountInteractor.h"
+#import "CNTCountInteractor.h"
 
 // Test support
 #import <SenTestingKit/SenTestingKit.h>
@@ -18,19 +18,19 @@
 #define assertCountEquals(expected) assertThatUnsignedInteger(self.count, equalToUnsignedInteger(expected))
 
 
-@interface CACountInteractorTests : SenTestCase <CACountInteractorOutput>
-@property (nonatomic, strong)   id<CACountInteractorInput>  interactor;
+@interface CNTCountInteractorTests : SenTestCase <CNTCountInteractorOutput>
+@property (nonatomic, strong)   id<CNTCountInteractorInput> interactor;
 @property (nonatomic, assign)   NSUInteger                  count;
 @end
 
 
-@implementation CACountInteractorTests
+@implementation CNTCountInteractorTests
 
 - (void)setUp
 {
     [super setUp];
     
-    CACountInteractor* interactor = [[CACountInteractor alloc] init];
+    CNTCountInteractor* interactor = [[CNTCountInteractor alloc] init];
     interactor.output = self;
     self.interactor = interactor;
 }

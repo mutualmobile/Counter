@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "CAAppDelegate.h"
+#import "CNTAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([CAAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([CNTAppDelegate class]));
     }
 }

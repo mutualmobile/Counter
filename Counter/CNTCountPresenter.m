@@ -6,15 +6,15 @@
 //  Copyright (c) 2013 Mutual Mobile. All rights reserved.
 //
 
-#import "CACountPresenter.h"
+#import "CNTCountPresenter.h"
 
 
-@interface CACountPresenter()
+@interface CNTCountPresenter()
 @property (nonatomic, strong)   NSNumberFormatter*  countFormatter;
 @end
 
 
-@implementation CACountPresenter
+@implementation CNTCountPresenter
 
 - (void)updateView
 {

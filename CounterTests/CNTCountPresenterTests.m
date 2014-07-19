@@ -6,11 +6,11 @@
 //
 
 // Class under test
-#import "CACountPresenter.h"
+#import "CNTCountPresenter.h"
 
 // Collaborators
-#import "CACountView.h"
-#import "CACountInteractorIO.h"
+#import "CNTCountView.h"
+#import "CNTCountInteractorIO.h"
 
 // Test support
 #import <SenTestingKit/SenTestingKit.h>
@@ -19,25 +19,25 @@
 #import "OCMockito.h"
 
 
-@interface CACountPresenterTests : SenTestCase
-@property (nonatomic, strong)   CACountPresenter*           presenter;
-@property (nonatomic, strong)   id<CACountView>             view;
-@property (nonatomic, strong)   id<CACountInteractorInput>  interactor;
+@interface CNTCountPresenterTests : SenTestCase
+@property (nonatomic, strong)   CNTCountPresenter*          presenter;
+@property (nonatomic, strong)   id<CNTCountView>            view;
+@property (nonatomic, strong)   id<CNTCountInteractorInput> interactor;
 @end
 
 
-@implementation CACountPresenterTests
+@implementation CNTCountPresenterTests
 
 - (void)setUp
 {
     [super setUp];
     
-    self.presenter = [[CACountPresenter alloc] init];
+    self.presenter = [[CNTCountPresenter alloc] init];
     
-    self.view = mockProtocol(@protocol(CACountView));
+    self.view = mockProtocol(@protocol(CNTCountView));
     self.presenter.view = self.view;
     
-    self.interactor = mockProtocol(@protocol(CACountInteractorInput));
+    self.interactor = mockProtocol(@protocol(CNTCountInteractorInput));
     self.presenter.interactor = self.interactor;
 }
 

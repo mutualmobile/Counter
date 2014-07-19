@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		6404442D29D84B1FA3050836 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97252028FD0644648F55C910 /* libPods-Tests.a */; };
-		CF0DB9A917C7D9B20062B5F6 /* CACountPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9A817C7D9B20062B5F6 /* CACountPresenterTests.m */; };
-		CF0DB9AC17C7D9FF0062B5F6 /* CACountPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9AB17C7D9FF0062B5F6 /* CACountPresenter.m */; };
-		CF0DB9AF17C837390062B5F6 /* CACountViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9AE17C837390062B5F6 /* CACountViewControllerTests.m */; };
-		CF0DB9B217C837B40062B5F6 /* CACountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9B117C837B40062B5F6 /* CACountViewController.m */; };
-		CF0DB9B417C839E90062B5F6 /* CACountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0DB9B317C839E90062B5F6 /* CACountViewController.xib */; };
+		CF0DB9A917C7D9B20062B5F6 /* CNTCountPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9A817C7D9B20062B5F6 /* CNTCountPresenterTests.m */; };
+		CF0DB9AC17C7D9FF0062B5F6 /* CNTCountPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9AB17C7D9FF0062B5F6 /* CNTCountPresenter.m */; };
+		CF0DB9AF17C837390062B5F6 /* CNTCountViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9AE17C837390062B5F6 /* CNTCountViewControllerTests.m */; };
+		CF0DB9B217C837B40062B5F6 /* CNTCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DB9B117C837B40062B5F6 /* CNTCountViewController.m */; };
+		CF0DB9B417C839E90062B5F6 /* CNTCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0DB9B317C839E90062B5F6 /* CNTCountViewController.xib */; };
 		CFBFC3AD17C6A41D00004DE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFC3AC17C6A41D00004DE1 /* UIKit.framework */; };
 		CFBFC3AF17C6A41D00004DE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFC3AE17C6A41D00004DE1 /* Foundation.framework */; };
 		CFBFC3B117C6A41D00004DE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFC3B017C6A41D00004DE1 /* CoreGraphics.framework */; };
 		CFBFC3B717C6A41D00004DE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFBFC3B517C6A41D00004DE1 /* InfoPlist.strings */; };
 		CFBFC3B917C6A41D00004DE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC3B817C6A41D00004DE1 /* main.m */; };
-		CFBFC3BD17C6A41D00004DE1 /* CAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC3BC17C6A41D00004DE1 /* CAAppDelegate.m */; };
+		CFBFC3BD17C6A41D00004DE1 /* CNTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC3BC17C6A41D00004DE1 /* CNTAppDelegate.m */; };
 		CFBFC3BF17C6A41D00004DE1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CFBFC3BE17C6A41D00004DE1 /* Default.png */; };
 		CFBFC3C117C6A41D00004DE1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFBFC3C017C6A41D00004DE1 /* Default@2x.png */; };
 		CFBFC3C317C6A41D00004DE1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFBFC3C217C6A41D00004DE1 /* Default-568h@2x.png */; };
@@ -26,8 +26,8 @@
 		CFBFC3D217C6A41D00004DE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFC3AC17C6A41D00004DE1 /* UIKit.framework */; };
 		CFBFC3D317C6A41D00004DE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFC3AE17C6A41D00004DE1 /* Foundation.framework */; };
 		CFBFC3DB17C6A41D00004DE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFBFC3D917C6A41D00004DE1 /* InfoPlist.strings */; };
-		CFBFC3E817C6A63500004DE1 /* CACountInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC3E717C6A63500004DE1 /* CACountInteractorTests.m */; };
-		CFBFC3EC17C6A89700004DE1 /* CACountInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC3EB17C6A89700004DE1 /* CACountInteractor.m */; };
+		CFBFC3E817C6A63500004DE1 /* CNTCountInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC3E717C6A63500004DE1 /* CNTCountInteractorTests.m */; };
+		CFBFC3EC17C6A89700004DE1 /* CNTCountInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC3EB17C6A89700004DE1 /* CNTCountInteractor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,14 +42,14 @@
 
 /* Begin PBXFileReference section */
 		97252028FD0644648F55C910 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF0DB9A817C7D9B20062B5F6 /* CACountPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACountPresenterTests.m; sourceTree = "<group>"; };
-		CF0DB9AA17C7D9FF0062B5F6 /* CACountPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACountPresenter.h; sourceTree = "<group>"; };
-		CF0DB9AB17C7D9FF0062B5F6 /* CACountPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACountPresenter.m; sourceTree = "<group>"; };
-		CF0DB9AD17C7DB770062B5F6 /* CACountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CACountView.h; sourceTree = "<group>"; };
-		CF0DB9AE17C837390062B5F6 /* CACountViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACountViewControllerTests.m; sourceTree = "<group>"; };
-		CF0DB9B017C837B40062B5F6 /* CACountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACountViewController.h; sourceTree = "<group>"; };
-		CF0DB9B117C837B40062B5F6 /* CACountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACountViewController.m; sourceTree = "<group>"; };
-		CF0DB9B317C839E90062B5F6 /* CACountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CACountViewController.xib; sourceTree = "<group>"; };
+		CF0DB9A817C7D9B20062B5F6 /* CNTCountPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTCountPresenterTests.m; sourceTree = "<group>"; };
+		CF0DB9AA17C7D9FF0062B5F6 /* CNTCountPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTCountPresenter.h; sourceTree = "<group>"; };
+		CF0DB9AB17C7D9FF0062B5F6 /* CNTCountPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTCountPresenter.m; sourceTree = "<group>"; };
+		CF0DB9AD17C7DB770062B5F6 /* CNTCountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNTCountView.h; sourceTree = "<group>"; };
+		CF0DB9AE17C837390062B5F6 /* CNTCountViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTCountViewControllerTests.m; sourceTree = "<group>"; };
+		CF0DB9B017C837B40062B5F6 /* CNTCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTCountViewController.h; sourceTree = "<group>"; };
+		CF0DB9B117C837B40062B5F6 /* CNTCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTCountViewController.m; sourceTree = "<group>"; };
+		CF0DB9B317C839E90062B5F6 /* CNTCountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CNTCountViewController.xib; sourceTree = "<group>"; };
 		CFBFC3A917C6A41D00004DE1 /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBFC3AC17C6A41D00004DE1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CFBFC3AE17C6A41D00004DE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,8 +58,8 @@
 		CFBFC3B617C6A41D00004DE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CFBFC3B817C6A41D00004DE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CFBFC3BA17C6A41D00004DE1 /* Counter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Counter-Prefix.pch"; sourceTree = "<group>"; };
-		CFBFC3BB17C6A41D00004DE1 /* CAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAAppDelegate.h; sourceTree = "<group>"; };
-		CFBFC3BC17C6A41D00004DE1 /* CAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAAppDelegate.m; sourceTree = "<group>"; };
+		CFBFC3BB17C6A41D00004DE1 /* CNTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNTAppDelegate.h; sourceTree = "<group>"; };
+		CFBFC3BC17C6A41D00004DE1 /* CNTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNTAppDelegate.m; sourceTree = "<group>"; };
 		CFBFC3BE17C6A41D00004DE1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CFBFC3C017C6A41D00004DE1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CFBFC3C217C6A41D00004DE1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -67,10 +67,10 @@
 		CFBFC3D017C6A41D00004DE1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		CFBFC3D817C6A41D00004DE1 /* CounterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CounterTests-Info.plist"; sourceTree = "<group>"; };
 		CFBFC3DA17C6A41D00004DE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CFBFC3E717C6A63500004DE1 /* CACountInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACountInteractorTests.m; sourceTree = "<group>"; };
-		CFBFC3EA17C6A89700004DE1 /* CACountInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACountInteractor.h; sourceTree = "<group>"; };
-		CFBFC3EB17C6A89700004DE1 /* CACountInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACountInteractor.m; sourceTree = "<group>"; };
-		CFBFC3EF17C6A9E500004DE1 /* CACountInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CACountInteractorIO.h; sourceTree = "<group>"; };
+		CFBFC3E717C6A63500004DE1 /* CNTCountInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTCountInteractorTests.m; sourceTree = "<group>"; };
+		CFBFC3EA17C6A89700004DE1 /* CNTCountInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTCountInteractor.h; sourceTree = "<group>"; };
+		CFBFC3EB17C6A89700004DE1 /* CNTCountInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTCountInteractor.m; sourceTree = "<group>"; };
+		CFBFC3EF17C6A9E500004DE1 /* CNTCountInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNTCountInteractorIO.h; sourceTree = "<group>"; };
 		F4DA1622EB34456CA7BE5285 /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -134,17 +134,17 @@
 		CFBFC3B217C6A41D00004DE1 /* Counter */ = {
 			isa = PBXGroup;
 			children = (
-				CFBFC3BB17C6A41D00004DE1 /* CAAppDelegate.h */,
-				CFBFC3BC17C6A41D00004DE1 /* CAAppDelegate.m */,
-				CFBFC3EF17C6A9E500004DE1 /* CACountInteractorIO.h */,
-				CFBFC3EA17C6A89700004DE1 /* CACountInteractor.h */,
-				CFBFC3EB17C6A89700004DE1 /* CACountInteractor.m */,
-				CF0DB9AA17C7D9FF0062B5F6 /* CACountPresenter.h */,
-				CF0DB9AB17C7D9FF0062B5F6 /* CACountPresenter.m */,
-				CF0DB9AD17C7DB770062B5F6 /* CACountView.h */,
-				CF0DB9B017C837B40062B5F6 /* CACountViewController.h */,
-				CF0DB9B117C837B40062B5F6 /* CACountViewController.m */,
-				CF0DB9B317C839E90062B5F6 /* CACountViewController.xib */,
+				CFBFC3BB17C6A41D00004DE1 /* CNTAppDelegate.h */,
+				CFBFC3BC17C6A41D00004DE1 /* CNTAppDelegate.m */,
+				CFBFC3EF17C6A9E500004DE1 /* CNTCountInteractorIO.h */,
+				CFBFC3EA17C6A89700004DE1 /* CNTCountInteractor.h */,
+				CFBFC3EB17C6A89700004DE1 /* CNTCountInteractor.m */,
+				CF0DB9AA17C7D9FF0062B5F6 /* CNTCountPresenter.h */,
+				CF0DB9AB17C7D9FF0062B5F6 /* CNTCountPresenter.m */,
+				CF0DB9AD17C7DB770062B5F6 /* CNTCountView.h */,
+				CF0DB9B017C837B40062B5F6 /* CNTCountViewController.h */,
+				CF0DB9B117C837B40062B5F6 /* CNTCountViewController.m */,
+				CF0DB9B317C839E90062B5F6 /* CNTCountViewController.xib */,
 				CFBFC3B317C6A41D00004DE1 /* Supporting Files */,
 			);
 			path = Counter;
@@ -167,9 +167,9 @@
 		CFBFC3D617C6A41D00004DE1 /* CounterTests */ = {
 			isa = PBXGroup;
 			children = (
-				CFBFC3E717C6A63500004DE1 /* CACountInteractorTests.m */,
-				CF0DB9A817C7D9B20062B5F6 /* CACountPresenterTests.m */,
-				CF0DB9AE17C837390062B5F6 /* CACountViewControllerTests.m */,
+				CFBFC3E717C6A63500004DE1 /* CNTCountInteractorTests.m */,
+				CF0DB9A817C7D9B20062B5F6 /* CNTCountPresenterTests.m */,
+				CF0DB9AE17C837390062B5F6 /* CNTCountViewControllerTests.m */,
 				CFBFC3D717C6A41D00004DE1 /* Supporting Files */,
 			);
 			path = CounterTests;
@@ -231,7 +231,7 @@
 		CFBFC3A117C6A41D00004DE1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = CA;
+				CLASSPREFIX = CNT;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Mutual Mobile";
 			};
@@ -262,7 +262,7 @@
 				CFBFC3BF17C6A41D00004DE1 /* Default.png in Resources */,
 				CFBFC3C117C6A41D00004DE1 /* Default@2x.png in Resources */,
 				CFBFC3C317C6A41D00004DE1 /* Default-568h@2x.png in Resources */,
-				CF0DB9B417C839E90062B5F6 /* CACountViewController.xib in Resources */,
+				CF0DB9B417C839E90062B5F6 /* CNTCountViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,10 +328,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFBFC3B917C6A41D00004DE1 /* main.m in Sources */,
-				CFBFC3BD17C6A41D00004DE1 /* CAAppDelegate.m in Sources */,
-				CFBFC3EC17C6A89700004DE1 /* CACountInteractor.m in Sources */,
-				CF0DB9AC17C7D9FF0062B5F6 /* CACountPresenter.m in Sources */,
-				CF0DB9B217C837B40062B5F6 /* CACountViewController.m in Sources */,
+				CFBFC3BD17C6A41D00004DE1 /* CNTAppDelegate.m in Sources */,
+				CFBFC3EC17C6A89700004DE1 /* CNTCountInteractor.m in Sources */,
+				CF0DB9AC17C7D9FF0062B5F6 /* CNTCountPresenter.m in Sources */,
+				CF0DB9B217C837B40062B5F6 /* CNTCountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,9 +339,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFBFC3E817C6A63500004DE1 /* CACountInteractorTests.m in Sources */,
-				CF0DB9A917C7D9B20062B5F6 /* CACountPresenterTests.m in Sources */,
-				CF0DB9AF17C837390062B5F6 /* CACountViewControllerTests.m in Sources */,
+				CFBFC3E817C6A63500004DE1 /* CNTCountInteractorTests.m in Sources */,
+				CF0DB9A917C7D9B20062B5F6 /* CNTCountPresenterTests.m in Sources */,
+				CF0DB9AF17C837390062B5F6 /* CNTCountViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

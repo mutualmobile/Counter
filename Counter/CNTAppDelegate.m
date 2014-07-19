@@ -1,18 +1,18 @@
 //
-//  CAAppDelegate.m
+//  CNTAppDelegate.m
 //  Counter
 //
 //  Created by Jeff Gilbert on 8/22/13.
 //  Copyright (c) 2013 Mutual Mobile. All rights reserved.
 //
 
-#import "CAAppDelegate.h"
-#import "CACountInteractor.h"
-#import "CACountPresenter.h"
-#import "CACountViewController.h"
+#import "CNTAppDelegate.h"
+#import "CNTCountInteractor.h"
+#import "CNTCountPresenter.h"
+#import "CNTCountViewController.h"
 
 
-@implementation CAAppDelegate
+@implementation CNTAppDelegate
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
@@ -28,9 +28,9 @@
 
 - (void)createScreen
 {
-	CACountViewController* view = [[CACountViewController alloc] init];
-	CACountPresenter* presenter = [[CACountPresenter alloc] init];
-	CACountInteractor* interactor = [[CACountInteractor alloc] init];
+	CNTCountViewController* view = [[CNTCountViewController alloc] init];
+	CNTCountPresenter* presenter = [[CNTCountPresenter alloc] init];
+	CNTCountInteractor* interactor = [[CNTCountInteractor alloc] init];
 
     view.presenter = presenter;
     presenter.view = view;

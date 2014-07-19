@@ -6,10 +6,10 @@
 //
 
 // Class under test
-#import "CACountViewController.h"
+#import "CNTCountViewController.h"
 
 // Collaborators
-#import "CACountPresenter.h"
+#import "CNTCountPresenter.h"
 
 // Test support
 #import <SenTestingKit/SenTestingKit.h>
@@ -25,22 +25,22 @@
 #define assertDecrementButtonEnabledEquals(expected) assertThatBool(self.view.decrementButton.enabled, equalToBool(expected))
 
 
-@interface CACountViewControllerTests : SenTestCase
-@property (nonatomic, strong)   CACountViewController*  view;
-@property (nonatomic, strong)   CACountPresenter*       presenter;
+@interface CNTCountViewControllerTests : SenTestCase
+@property (nonatomic, strong)   CNTCountViewController* view;
+@property (nonatomic, strong)   CNTCountPresenter*      presenter;
 @end
 
 
-@implementation CACountViewControllerTests
+@implementation CNTCountViewControllerTests
 
 - (void)setUp
 {
     [super setUp];
     
-    self.view = [[CACountViewController alloc] init];
+    self.view = [[CNTCountViewController alloc] init];
     [self.view view];   // force the view to load
     
-    self.presenter = mock([CACountPresenter class]);
+    self.presenter = mock([CNTCountPresenter class]);
     self.view.presenter = self.presenter;
 }
 
