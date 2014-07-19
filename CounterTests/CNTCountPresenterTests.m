@@ -13,13 +13,13 @@
 #import "CNTCountInteractorIO.h"
 
 // Test support
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
 #define MOCKITO_SHORTHAND
 #import "OCMockito.h"
 
 
-@interface CNTCountPresenterTests : SenTestCase
+@interface CNTCountPresenterTests : XCTestCase
 @property (nonatomic, strong)   CNTCountPresenter*          presenter;
 @property (nonatomic, strong)   id<CNTCountView>            view;
 @property (nonatomic, strong)   id<CNTCountInteractorInput> interactor;

@@ -12,7 +12,7 @@
 #import "CNTCountPresenter.h"
 
 // Test support
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
 #define HC_SHORTHAND
 #import "OCHamcrest.h"
@@ -25,7 +25,7 @@
 #define assertDecrementButtonEnabledEquals(expected) assertThatBool(self.view.decrementButton.enabled, equalToBool(expected))
 
 
-@interface CNTCountViewControllerTests : SenTestCase
+@interface CNTCountViewControllerTests : XCTestCase
 @property (nonatomic, strong)   CNTCountViewController* view;
 @property (nonatomic, strong)   CNTCountPresenter*      presenter;
 @end

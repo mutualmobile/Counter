@@ -9,7 +9,7 @@
 #import "CNTCountInteractor.h"
 
 // Test support
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
 #define HC_SHORTHAND
 #import "OCHamcrest.h"
@@ -18,7 +18,7 @@
 #define assertCountEquals(expected) assertThatUnsignedInteger(self.count, equalToUnsignedInteger(expected))
 
 
-@interface CNTCountInteractorTests : SenTestCase <CNTCountInteractorOutput>
+@interface CNTCountInteractorTests : XCTestCase <CNTCountInteractorOutput>
 @property (nonatomic, strong)   id<CNTCountInteractorInput> interactor;
 @property (nonatomic, assign)   NSUInteger                  count;
 @end
