@@ -125,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				CFBFC3B217C6A41D00004DE1 /* Counter */,
-				CFBFC3D617C6A41D00004DE1 /* CounterTests */,
 				CF6FA884197AD41300B2B172 /* Counter Tests */,
 				CFBFC3AB17C6A41D00004DE1 /* Frameworks */,
 				CFBFC3AA17C6A41D00004DE1 /* Products */,
@@ -187,13 +186,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CFBFC3D617C6A41D00004DE1 /* CounterTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CounterTests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -241,7 +233,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CNT;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Mutual Mobile";
 				TargetAttributes = {
 					CF6FA87F197AD41300B2B172 = {
@@ -403,6 +395,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Counter Tests/Counter Tests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mutualmobile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -433,6 +426,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Counter Tests/Counter Tests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mutualmobile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -453,6 +447,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -501,6 +496,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Counter/Counter-Prefix.pch";
 				INFOPLIST_FILE = "Counter/Counter-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mutualmobile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -512,6 +508,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Counter/Counter-Prefix.pch";
 				INFOPLIST_FILE = "Counter/Counter-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mutualmobile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
