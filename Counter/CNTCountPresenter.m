@@ -18,18 +18,21 @@
 
 - (void)updateView
 {
+    NSLog(@"Presenter ask interactor about data");
     [self.interactor requestCount];
 }
 
 
 - (void)increment
 {
+    NSLog(@"Presenter get that");
     [self.interactor increment];
 }
 
 
 - (void)decrement
 {
+    NSLog(@"Presenter get that");
     [self.interactor decrement];
 }
 
@@ -50,7 +53,11 @@
 
 - (void)updateCount:(NSUInteger)count
 {
-    [self.view setCountText:[self formattedCount:count]];
+    NSLog(@"Presenter requesting to data base for string of counter");
+    NSString *countText = [self formattedCount:count];
+    NSLog(@"Presenter updating view");
+    [self.view setCountText:countText];
+    NSLog(@"Presenter tell view that he can check for enable decrement");
     [self.view setDecrementEnabled:[self canDecrementCount:count]];
 }
 

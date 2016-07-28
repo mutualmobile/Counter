@@ -157,18 +157,11 @@
 		CFBFC3B217C6A41D00004DE1 /* Counter */ = {
 			isa = PBXGroup;
 			children = (
-				CFBFC3BB17C6A41D00004DE1 /* CNTAppDelegate.h */,
-				CFBFC3BC17C6A41D00004DE1 /* CNTAppDelegate.m */,
-				CFBFC3EF17C6A9E500004DE1 /* CNTCountInteractorIO.h */,
-				CFBFC3EA17C6A89700004DE1 /* CNTCountInteractor.h */,
-				CFBFC3EB17C6A89700004DE1 /* CNTCountInteractor.m */,
-				CF0DB9AA17C7D9FF0062B5F6 /* CNTCountPresenter.h */,
-				CF0DB9AB17C7D9FF0062B5F6 /* CNTCountPresenter.m */,
-				CF0DB9AD17C7DB770062B5F6 /* CNTCountView.h */,
-				CF0DB9B017C837B40062B5F6 /* CNTCountViewController.h */,
-				CF0DB9B117C837B40062B5F6 /* CNTCountViewController.m */,
-				CF0DB9B317C839E90062B5F6 /* CNTCountViewController.xib */,
-				CFBFC3B317C6A41D00004DE1 /* Supporting Files */,
+				DE5031151D4A8E0F00332AD3 /* App */,
+				DE5031161D4A8E1700332AD3 /* Routers */,
+				DE5031171D4A8E3000332AD3 /* Interactors */,
+				DE5031181D4A8E4000332AD3 /* Presenters */,
+				DE5031191D4A8E5B00332AD3 /* Views */,
 			);
 			path = Counter;
 			sourceTree = "<group>";
@@ -192,6 +185,53 @@
 			children = (
 			);
 			path = CounterTests;
+			sourceTree = "<group>";
+		};
+		DE5031151D4A8E0F00332AD3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CFBFC3BB17C6A41D00004DE1 /* CNTAppDelegate.h */,
+				CFBFC3BC17C6A41D00004DE1 /* CNTAppDelegate.m */,
+				CFBFC3B317C6A41D00004DE1 /* Supporting Files */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		DE5031161D4A8E1700332AD3 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				CFBFC3EF17C6A9E500004DE1 /* CNTCountInteractorIO.h */,
+				CF0DB9AD17C7DB770062B5F6 /* CNTCountView.h */,
+			);
+			name = Routers;
+			sourceTree = "<group>";
+		};
+		DE5031171D4A8E3000332AD3 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				CFBFC3EA17C6A89700004DE1 /* CNTCountInteractor.h */,
+				CFBFC3EB17C6A89700004DE1 /* CNTCountInteractor.m */,
+			);
+			name = Interactors;
+			sourceTree = "<group>";
+		};
+		DE5031181D4A8E4000332AD3 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				CF0DB9AA17C7D9FF0062B5F6 /* CNTCountPresenter.h */,
+				CF0DB9AB17C7D9FF0062B5F6 /* CNTCountPresenter.m */,
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		DE5031191D4A8E5B00332AD3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF0DB9B017C837B40062B5F6 /* CNTCountViewController.h */,
+				CF0DB9B117C837B40062B5F6 /* CNTCountViewController.m */,
+				CF0DB9B317C839E90062B5F6 /* CNTCountViewController.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

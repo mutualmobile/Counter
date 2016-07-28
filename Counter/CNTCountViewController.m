@@ -23,7 +23,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
+    NSLog(@"View want to update his data");
     [self.presenter updateView];
 }
 
@@ -32,6 +32,7 @@
 
 - (void)setCountText:(NSString*)countText
 {
+    NSLog(@"View updating his data");
     self.countLabel.text = countText;
 }
 
@@ -46,12 +47,14 @@
 
 - (IBAction)increment:(id)sender
 {
+    NSLog(@"\n\nUser wants to increment");
     [self.presenter increment];
 }
 
 
 - (IBAction)decrement:(id)sender
 {
+    NSLog(@"\n\nUser wants to decrement");
     [self.presenter decrement];
 }
 
