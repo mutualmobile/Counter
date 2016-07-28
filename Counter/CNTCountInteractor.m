@@ -13,7 +13,6 @@
 @property (nonatomic, assign)   NSUInteger  count;
 @end
 
-
 @implementation CNTCountInteractor
 
 - (void)requestCount
@@ -24,6 +23,7 @@
 
 - (void)increment
 {
+    NSLog(@"Interactor incrementing");
     ++self.count;
     [self sendCount];
 }
@@ -31,8 +31,10 @@
 
 - (void)decrement
 {
+    NSLog(@"Interactor check for decrement");
 	if ([self canDecrement])
 	{
+        NSLog(@"Interactor decrementing");
         --self.count;
         [self sendCount];
     }
@@ -47,6 +49,7 @@
 
 - (void)sendCount
 {
+    NSLog(@"Interactor sending data to presenter via router");
     [self.output updateCount:self.count];
 }
 
