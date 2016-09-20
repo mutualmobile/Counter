@@ -9,49 +9,35 @@
 #import "CNTCountViewController.h"
 #import "CNTCountPresenter.h"
 
-
 @implementation CNTCountViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.countLabel.text = nil;
 }
 
-
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
     [self.presenter updateView];
 }
 
-
 #pragma mark - Count view
 
-- (void)setCountText:(NSString*)countText
-{
+- (void)setCountText:(NSString *)countText {
     self.countLabel.text = countText;
 }
 
-
-- (void)setDecrementEnabled:(BOOL)enabled
-{
+- (void)setDecrementEnabled:(BOOL)enabled {
     self.decrementButton.enabled = enabled;
 }
 
-
 #pragma mark - Actions
 
-- (IBAction)increment:(id)sender
-{
+- (IBAction)increment:(id)sender {
     [self.presenter increment];
 }
 
-
-- (IBAction)decrement:(id)sender
-{
+- (IBAction)decrement:(id)sender {
     [self.presenter decrement];
 }
 

@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-
 @protocol CNTCountView <NSObject>
-- (void)setCountText:(NSString*)countText;
+- (void)setCountText:(NSString *)countText;
 - (void)setDecrementEnabled:(BOOL)enabled;
 @end
