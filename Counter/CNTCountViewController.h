@@ -11,11 +11,9 @@
 
 @class CNTCountPresenter;
 
-
 @interface CNTCountViewController : UIViewController <CNTCountView>
-@property (nonatomic, weak) IBOutlet    UILabel*    countLabel;
-@property (nonatomic, weak) IBOutlet    UIButton*   decrementButton;
-@property (nonatomic, weak) IBOutlet    UIButton*   incrementButton;
-
-@property (nonatomic, strong)   CNTCountPresenter*  presenter;
+@property (nonatomic, weak) IBOutlet UILabel *countLabel;
+@property (nonatomic, weak) IBOutlet UIButton *decrementButton;
+@property (nonatomic, weak) IBOutlet UIButton *incrementButton;
+@property (nonatomic, strong) CNTCountPresenter *presenter;
 @end

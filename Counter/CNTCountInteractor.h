@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "CNTCountInteractorIO.h"
 
-
 @interface CNTCountInteractor : NSObject <CNTCountInteractorInput>
 @property (nonatomic, weak) id<CNTCountInteractorOutput> output;
 @end
